@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/speed-test.css">
+    <title>Speed Test</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="/pages/react-test.html">React Test</a></li>
+            <li class="nav-link active"><a href="/pages/speed-test.html">Speed Test</a></li>
+        </ul>
+    </nav>
+    <div class="d-flex h-100 flex-grow-1">
+        <aside>
+            <div class="d-flex align-items-center justify-content-between">
+                <h2>React History</h2>
+                <button onclick="clearReactsLocal()">Clear</button>
+            </div>
+            <div class="container">
+
+            </div>
+        </aside>
+        <main class="flex-grow-1">
+            <div onclick="onClickCircle()" id="circle" class="circle d-none circle-activate"></div>
+            <p id="result-main"></p>
+            <p id="input-main">Click with Mouse or (Space) on keyboard to start</p>
+        </main>
+    </div>
+    <script defer src="../scripts/speed-test.js" ></script>
+</body>
+</html>
